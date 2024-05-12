@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import ContactInfo from './components/contactInfo'
 import './styles/styles.css'
+import EducationalInfo from './components/educationalInfo';
 
 function App() {
   const [contactInfo, setContactInfo] = useState({
@@ -12,7 +13,17 @@ function App() {
 
   const handleContactInfoUpdate = (updatedInfo) => {
     setContactInfo(updatedInfo)
-  }
+  };
+
+  const [educationalInfo, setEducationalInfo] = useState({
+    institutionName: "",
+    degreeEarned: "",
+    yearsAttended: ""
+  });
+
+  const handleEducationalInfoUpdate = (updatedInfo) => {
+    setEducationalInfo(updatedInfo)
+  };
 
   return (
     <>
@@ -25,6 +36,23 @@ function App() {
         <p>{contactInfo.fullName}</p>
         <p>{contactInfo.emailAddress}</p>
         <p>{contactInfo.telephoneNumber}</p>
+      </div>
+    </div>
+
+    <br>
+    </br>
+    <br>
+    </br>
+    
+    <div id="educationalInfo">
+      <div>
+        <EducationalInfo onChange = {handleEducationalInfoUpdate}></EducationalInfo>
+      </div>
+      
+      <div>
+        <p>{educationalInfo.institutionName}</p>
+        <p>{educationalInfo.degreeEarned}</p>
+        <p>{educationalInfo.yearsAttended}</p>
       </div>
     </div>
     </>
