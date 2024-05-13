@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import ContactInfo from './components/contactInfo'
+import ContactInfo from './components/contactInfo';
 import './styles/styles.css'
 import EducationalInfo from './components/educationalInfo';
 
@@ -11,8 +11,8 @@ function App() {
     telephoneNumber: ""
   });
 
-  const handleContactInfoUpdate = (updatedInfo) => {
-    setContactInfo(updatedInfo)
+  const handleContactInfoUpdate = (updatedInfoC) => {
+    setContactInfo(updatedInfoC)
   };
 
   const [educationalInfo, setEducationalInfo] = useState({
@@ -21,8 +21,8 @@ function App() {
     yearsAttended: ""
   });
 
-  const handleEducationalInfoUpdate = (updatedInfo) => {
-    setEducationalInfo(updatedInfo)
+  const handleEducationalInfoUpdate = (updatedInfoE) => {
+    setEducationalInfo(updatedInfoE)
   };
 
   return (
@@ -43,7 +43,7 @@ function App() {
     </br>
     <br>
     </br>
-    
+
     <div id="educationalInfo">
       <div>
         <EducationalInfo onChange = {handleEducationalInfoUpdate}></EducationalInfo>
@@ -59,4 +59,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

@@ -46,3 +46,9 @@ div{
     margin-right: auto;
     margin-left: auto;
 }
+
+#educationalInfo{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}

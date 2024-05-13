@@ -22,7 +22,7 @@ function EducationalInfo(props){
     }
 
     const handleYearsAttendedInputChange = (e) => {
-        setContactInfo(prevInfo => (
+        setEducationalInfo(prevInfo => (
             {...prevInfo, yearsAttended: e.target.value}
         ))
         props.onChange({...educationalInfo, yearsAttended: e.target.value})
@@ -33,20 +33,19 @@ function EducationalInfo(props){
             <h2>Educational Information:</h2>
 
             <div>
-                <label htmlFor="institutionName">Institution Name:     </label>
+                <label htmlFor="institutionName">Institution Name:<br></br></label>
                 <input type="text" id="institutionName" name="institutionName" value={educationalInfo.institutionName} onChange={handleInstitutionNameInputChange}/>
             </div>
 
             <div>
-                <label htmlFor="degreeEarned">Degree Earned and Field:     </label>
+                <label htmlFor="degreeEarned">Degree Earned and Field:<br></br></label>
                 <input type="text" id="degreeEarned" name="degreeEarned" value={educationalInfo.degreeEarned} onChange={handleDegreeEarnedInputChange}/>
             </div>
 
             <div>
-                <label htmlFor="yearsAttended">Years Attended:     </label>
+                <label htmlFor="yearsAttended">Years Attended:<br></br></label>
                 <input type="text" id="yearsAttended" name="yearsAttended" value={educationalInfo.yearsAttended} onChange={handleYearsAttendedInputChange}/>
             </div>
-
 
         </div>
     )

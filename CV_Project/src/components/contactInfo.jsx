@@ -33,20 +33,19 @@ function ContactInfo(props){
             <h2>Contact Information:</h2>
 
             <div>
-                <label htmlFor="fullName">Full Name:     </label>
+                <label htmlFor="fullName">Full Name:<br></br></label>
                 <input type="text" id="fullName" name="fullName" value={contactInfo.fullName} onChange={handleFullNameInputChange}/>
             </div>
 
             <div>
-                <label htmlFor="emailAddress">E-mail Address:     </label>
+                <label htmlFor="emailAddress">E-mail Address:<br></br></label>
                 <input type="text" id="emailAddress" name="emailAddress" value={contactInfo.emailAddress} onChange={handleEmailAddressInputChange}/>
             </div>
 
             <div>
-                <label htmlFor="Telephone Number">Telephone Number:     </label>
+                <label htmlFor="telephoneNumber">Telephone Number:<br></br></label>
                 <input type="text" id="telephoneNumber" name="telephoneNumber" value={contactInfo.telephoneNumber} onChange={handleTelephoneNumberInputChange}/>
             </div>
-
 
         </div>
     )
