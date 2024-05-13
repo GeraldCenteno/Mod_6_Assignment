@@ -11,14 +11,14 @@ function ContactInfo(props){
         setContactInfo(prevInfo => (
             {...prevInfo, fullName: e.target.value}
         ))
-        props.onChange({...ContactInfo, fullName: e.target.value})
+        props.onChange({...contactInfo, fullName: e.target.value})
     }
 
     const handleEmailAddressInputChange = (e) => {
         setContactInfo(prevInfo => (
             {...prevInfo, emailAddress: e.target.value}
         ))
-        props.onChange({...ContactInfo, emailAddress: e.target.value})
+        props.onChange({...contactInfo, emailAddress: e.target.value})
     }
 
     const handleTelephoneNumberInputChange = (e) => {

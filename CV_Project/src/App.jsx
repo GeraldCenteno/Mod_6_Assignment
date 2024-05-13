@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import ContactInfo from './components/contactInfo';
 import './styles/styles.css'
+import ContactInfo from './components/contactInfo';
 import EducationalInfo from './components/educationalInfo';
 import WorkInfo from './components/workInfo';
 
