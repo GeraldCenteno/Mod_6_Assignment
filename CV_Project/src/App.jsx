@@ -3,6 +3,7 @@ import './App.css'
 import ContactInfo from './components/contactInfo';
 import './styles/styles.css'
 import EducationalInfo from './components/educationalInfo';
+import WorkInfo from './components/workInfo';
 
 function App() {
   const [contactInfo, setContactInfo] = useState({
@@ -23,6 +24,16 @@ function App() {
 
   const handleEducationalInfoUpdate = (updatedInfoE) => {
     setEducationalInfo(updatedInfoE)
+  };
+
+  const [workInfo, setWorkInfo] = useState({
+    companyName: "",
+    positionTitle: "",
+    yearsWorked: ""
+  });
+
+  const handleWorkInfoUpdate = (updatedInfoW) => {
+    setWorkInfo(updatedInfoW)
   };
 
   return (
@@ -55,6 +66,19 @@ function App() {
         <p>{educationalInfo.yearsAttended}</p>
       </div>
     </div>
+
+    <div id="workInfo">
+      <div>
+        <WorkInfo onChange = {handleWorkInfoUpdate}></WorkInfo>
+      </div>
+      
+      <div>
+        <p>{workInfo.companyName}</p>
+        <p>{workInfo.positionTitle}</p>
+        <p>{workInfo.yearsWorked}</p>
+      </div>
+    </div>
+
     </>
   )
 }
