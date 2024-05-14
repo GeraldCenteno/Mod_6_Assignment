@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 function WorkInfo(props){
     const [workInfo, setWorkInfo] = useState({
         companyName: "",
@@ -46,7 +47,6 @@ function WorkInfo(props){
                 <label htmlFor="yearsWorked">Years Worked or Volunteered:<br></br></label>
                 <input type="text" id="yearsWorked" name="yearsWorked" value={workInfo.yearsWorked} onChange={handleYearsWorkedInputChange}/>
             </div>
-
         </div>
     )
 }

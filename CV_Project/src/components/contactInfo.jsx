@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 function ContactInfo(props){
     const [contactInfo, setContactInfo] = useState({
         fullName: "",
@@ -46,7 +47,6 @@ function ContactInfo(props){
                 <label htmlFor="telephoneNumber">Telephone Number:<br></br></label>
                 <input type="text" id="telephoneNumber" name="telephoneNumber" value={contactInfo.telephoneNumber} onChange={handleTelephoneNumberInputChange}/>
             </div>
-
         </div>
     )
 }

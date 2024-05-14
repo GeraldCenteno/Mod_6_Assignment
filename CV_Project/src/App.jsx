@@ -38,6 +38,7 @@ function App() {
 
   return (
     <>
+
     <div id="contactInfo">
       <div>
         <ContactInfo onChange = {handleContactInfoUpdate}></ContactInfo>
@@ -50,11 +51,6 @@ function App() {
       </div>
     </div>
 
-    <br>
-    </br>
-    <br>
-    </br>
-
     <div id="educationalInfo">
       <div>
         <EducationalInfo onChange = {handleEducationalInfoUpdate}></EducationalInfo>
@@ -64,7 +60,7 @@ function App() {
         <p>{educationalInfo.institutionName}</p>
         <p>{educationalInfo.degreeEarned}</p>
         <p>{educationalInfo.yearsAttended}</p>
-      </div>
+       </div>
     </div>
 
     <div id="workInfo">

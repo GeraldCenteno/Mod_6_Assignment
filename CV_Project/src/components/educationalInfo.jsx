@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 function EducationalInfo(props){
     const [educationalInfo, setEducationalInfo] = useState({
         institutionName: "",
@@ -46,7 +47,6 @@ function EducationalInfo(props){
                 <label htmlFor="yearsAttended">Years Attended:<br></br></label>
                 <input type="text" id="yearsAttended" name="yearsAttended" value={educationalInfo.yearsAttended} onChange={handleYearsAttendedInputChange}/>
             </div>
-
         </div>
     )
 }
